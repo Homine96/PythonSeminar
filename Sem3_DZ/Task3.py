@@ -15,7 +15,7 @@ print(digits,end=" => ")
 
 digits2=[]
 for i in range(len(digits)):
-    ls=round(digits[i]*100 % 100 , 1)
+    ls=round(digits[i]*100 % 100, 2)
     digits2.append(ls)
    
 print((max(digits2)-min(digits2))/100)
