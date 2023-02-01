@@ -37,7 +37,7 @@ def controller(message):
         )
         button(message)
     elif message.text == "играть":
-        bot.register_next_step_handler(message, go)
+        go(message)
 def go(message):
     global flag
     bot.send_message(message.chat.id, 'Приветсвую в игре!' )
